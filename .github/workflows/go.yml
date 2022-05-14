@@ -1,14 +1,14 @@
 name: Go
 
 on: 
-push:
-  paths: 
-      - '**.go'
-      - '.github/workflows/**'
-  pull_request:
+  push:
     paths: 
-      - '**.go'
-      - '.github/workflows/**'
+        - '**.go'
+        - '.github/workflows/**'
+    pull_request:
+      paths: 
+        - '**.go'
+        - '.github/workflows/**'
 
 jobs:
   linter:
